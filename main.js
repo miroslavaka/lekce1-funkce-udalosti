@@ -1,6 +1,6 @@
 // tady je místo pro náš program
 
-document.querySelector("#vysledek").innerHTML = secti(4, 5);
+//document.querySelector("#vysledek").innerHTML = secti(4, 5);
 
 /**
  * Sečte dvě čísla na vstupu a vrátí výsledek
@@ -9,13 +9,23 @@ document.querySelector("#vysledek").innerHTML = secti(4, 5);
  * @param {int} b
  */
 function secti(a, b) {
-  let c = a + b;
-  return c;
+    let c = a + b;
+    //return c;
+    document.querySelector("#vysledek").innerHTML = c;
 }
 
 /**
  * Upozorní uživatele při spuštění.
  */
 function upozorni() {
-  alert("Gratulace, právě jsi spustila tuto funkci!");
+    let text = "Gratulace, právě jsi spustila tuto funkci!";
+    alert(text);
+    console.log(text);
+    let stvorec = document.querySelector('.ctverecek');
+    stvorec.innerHTML = text;
+    stvorec.style.lineHeight = '2';
+}
+
+function zmenfarbu() {
+    document.querySelector('.ctverecek').style.background = 'green';
 }
