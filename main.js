@@ -28,6 +28,5 @@ function upozorni() {
 }
 
 function zmenfarbu() {
-    //document.querySelector('.ctverecek').style.background = 'green';
     stvorec.style.background = 'green';
 }
