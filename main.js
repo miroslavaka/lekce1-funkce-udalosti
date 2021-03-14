@@ -17,15 +17,17 @@ function secti(a, b) {
 /**
  * Upozorní uživatele při spuštění.
  */
+let stvorec = document.querySelector('.ctverecek');
+
 function upozorni() {
     let text = "Gratulace, právě jsi spustila tuto funkci!";
     alert(text);
     console.log(text);
-    let stvorec = document.querySelector('.ctverecek');
     stvorec.innerHTML = text;
     stvorec.style.lineHeight = '2';
 }
 
 function zmenfarbu() {
-    document.querySelector('.ctverecek').style.background = 'green';
+    //document.querySelector('.ctverecek').style.background = 'green';
+    stvorec.style.background = 'green';
 }
