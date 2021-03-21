@@ -5,13 +5,13 @@
 /**
  * Sečte dvě čísla na vstupu a vrátí výsledek
  *
+ * @param {string} selector
  * @param {int} a
  * @param {int} b
  */
-function secti(a, b) {
+function secti(selector, a, b) {
     let c = a + b;
-    //return c;
-    document.querySelector("#vysledek").innerHTML = c;
+    document.querySelector(selector).innerHTML = c;
 }
 
 /**
@@ -26,6 +26,12 @@ function upozorni() {
     stvorec.innerHTML = text;
     stvorec.style.lineHeight = '2';
 }
+
+/**
+ * Zmen farbu stvorca na zelenu.
+ * 
+ * @param {}
+ */
 
 function zmenfarbu() {
     stvorec.style.background = 'green';
